@@ -1,0 +1,68 @@
+﻿@using Organic.Repository
+@using Organic.Models.Product
+@model Organic.Repository.PageResult<Organic.Models.Product.ProduitView>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+    // Console.WriteLine(Model.Result as List<ProduitView>);
+}
+
+<h2>title</h2>
+
+
+<form asp-action="Index" method="get">
+    <input type="text" name="Nom" value="@ViewBag.Request.Nom" placeholder="Rechercher par nom..." />
+    <input type="number" name="QuantityMin" value="@ViewBag.Request.QuantityMin" placeholder="Quantity minimum" />
+    <input type="number" name="QuantityMax" value="@ViewBag.Request.QuantityMax" placeholder="Quantity maximum" />
+    <input type="text" name="Category" value="@ViewBag.Request.Category" placeholder="Category" />
+    <button type="submit">Rechercher</button>
+</form>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(m => m.Result.First().Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.Result.First().Produit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.Result.First().Sachet)
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Result) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Produit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sachet)
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@for (var i = 0; i < Model.TotalPage; i++)
+{
+    if ((i+1) == Model.PageIndex)
+    {
+        <span>@(i+1)</span>
+    }
+    else
+    {
+        <a href="@Url.Action("Index", 
+                     new { Nom = @ViewBag.Request.Nom, 
+                         QuantityMin = @ViewBag.Request.QuantityMin, 
+                         QuantityMax = @ViewBag.Request.QuantityMin, 
+                         Category = @ViewBag.Request.Category, number = i + 1, size = 10 })">
+            @(i+1)
+        </a>   
+    }
+}
