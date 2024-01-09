@@ -11097,11 +11097,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\data\\S6\\evaluation\\exercice\\Organic\\Organic\\Organic.csproj",
+      "projectUniqueName": "D:\\data\\stage\\learn\\myProject\\Introduction-Solid-Dotnet\\Organic\\Organic.csproj",
       "projectName": "Organic",
-      "projectPath": "D:\\data\\S6\\evaluation\\exercice\\Organic\\Organic\\Organic.csproj",
+      "projectPath": "D:\\data\\stage\\learn\\myProject\\Introduction-Solid-Dotnet\\Organic\\Organic.csproj",
       "packagesPath": "C:\\Users\\tsiaf\\.nuget\\packages\\",
-      "outputPath": "D:\\data\\S6\\evaluation\\exercice\\Organic\\Organic\\obj\\",
+      "outputPath": "D:\\data\\stage\\learn\\myProject\\Introduction-Solid-Dotnet\\Organic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tsiaf\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -11110,7 +11110,6 @@
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11183,7 +11182,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

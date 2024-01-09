@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AS+Wo5vKD5mWucbs8EfyGoSn4dRBUiKzfdWWprXepZZ04ec6JPDenaW+xZ/lNBlwhVl76/STy4Cm3nuLnYsnjA==",
+  "dgSpecHash": "dVxZ7G9qk5+41OVTtUWqJNHEOjQmNePXQiVxurwCeYnN5kCwynC0RzvLOJyUBRYmDav7JLlYUmkMgBmd3fwsJA==",
   "success": true,
-  "projectFilePath": "D:\\data\\S6\\evaluation\\exercice\\Organic\\Organic\\Organic.csproj",
+  "projectFilePath": "D:\\data\\stage\\learn\\myProject\\Introduction-Solid-Dotnet\\Organic\\Organic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tsiaf\\.nuget\\packages\\autofac\\7.0.1\\autofac.7.0.1.nupkg.sha512",
     "C:\\Users\\tsiaf\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
